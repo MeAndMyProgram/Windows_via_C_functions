@@ -9,7 +9,7 @@ void main(int32_t argc, char* argv[])
     printf("%s\n", errorDescription);
     if (strcmp(errorDescription, NO_DESCRIPTION_MESSAGE) != 0)
     {
-      //free(errorDescription);
+      LocalFree(errorDescription);
     }
   }
   else
